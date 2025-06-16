@@ -1,0 +1,69 @@
+<!DOCTYPE html>
+<html>
+<head>
+  <title>Laptop Order Form</title>
+</head>
+<body>
+  <h1>Order Your Laptop</h1>
+
+  <form action="#" method="post">
+    <label for="name">Full Name:</label><br>
+    <input type="text" id="name" name="name" required><br><br>
+
+    <label for="email">Email Address:</label><br>
+    <input type="email" id="email" name="email" required><br><br>
+
+    <label for="laptop">Select Laptop:</label><br>
+    <select id="laptop" name="laptop" required>
+      <option value="">--Choose a laptop--</option>
+      <option value="MacBook Pro M3">MacBook Pro M3</option>
+      <option value="Dell XPS 15">Dell XPS 15</option>
+      <option value="HP Spectre x360">HP Spectre x360</option>
+      <option value="Lenovo ThinkPad X1">Lenovo ThinkPad X1</option>
+      <option value="Asus ROG Zephyrus">Asus ROG Zephyrus</option>
+    </select><br><br>
+
+    <label for="quantity">Quantity:</label><br>
+    <input type="number" id="quantity" name="quantity" min="1" value="1" required><br><br>
+
+    <label for="address">Shipping Address:</label><br>
+    <textarea id="address" name="address" rows="4" cols="40" required></textarea><br><br>
+
+    <label for="cash">PAYMENT</label><br>
+    <input type="radio" name="PAYMENT" value="cash on delivery">
+    <label for="cash">online payment</label><br>
+    <input type="radio" name="PAYMENT" value="Online payment">
+    <label for="cash">cash on delivery</label><br>
+  
+
+    <br><input type="submit" value="Place Order">
+  </form>
+<h1>Available Laptops</h1>
+  <table border="3">
+    <tr>
+      <th>Model</th>
+      <th>Price</th>
+    </tr>
+    <tr>
+      <td>MacBook Pro M3</td>
+      <td>RS:1,20,000</td>
+    </tr>
+    <tr>
+      <td>Dell XPS 15</td>
+      <td>RS:67,000</td>
+    </tr>
+    <tr>
+      <td>HP Spectre x360</td>
+      <td>RS:40,000</td>
+    </tr>
+    <tr>
+      <td>Lenovo ThinkPad X1</td>
+      <td>Rs:67,000</td>
+    </tr>
+    <tr>
+      <td>Asus ROG Zephyrus</td>
+      <td>RS:1,70,000</td>
+    </tr>
+  </table>
+</body>
+</html>
