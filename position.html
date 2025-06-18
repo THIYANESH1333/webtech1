@@ -1,0 +1,111 @@
+<!DOCTYPE html>
+<html>
+<head>
+  <title>4 Scrolling Pages</title>
+  <style>
+    body, html {
+      margin: 0;
+      padding: 0;
+      scroll-behavior: smooth;
+    }
+
+    .page {
+      height: 110vh; /* Full screen height */
+      display: flex;
+      bottom:1000px;
+      justify-content: center;
+      align-items: center;
+      font-size: 30px;
+      color: white;
+    }
+
+    .relative{
+        position:fixed;
+        top:40px;
+    }
+
+    .sticky
+    {
+        position:sticky;
+        top:100px;
+    }
+
+    .flex-container
+    {
+        display:flex;
+        background-color: #f39c12;
+        height:100vh;
+        border:8px solid brown;
+        justify-content: space-evenly;
+        align-items: center;
+    }
+    .flex-container div
+    {
+        background-color: #f39c12;
+         height:100px;
+         width:100px;
+        border-radius:20px;
+        text-align: center;
+        padding-top: 35px;
+    }
+    @media(max-width:470px)
+    {
+        .nav{
+            display:flex;
+            flex-direction:column;
+        }
+    }
+    .box4
+    {
+        grid-column-start:1;
+        grid-column-end:5;
+    }
+
+    #page1 { background-color: #3498db; }
+    #page2 { background-color: #2ecc71; }
+    #page3 { background-color: #f39c12; }
+    #page4 { background-color: #e74c3c; }
+
+    nav {
+      display:flex;
+      position: fixed;
+      justify-content:center;
+      top: 100px;
+      left: 600px;
+      align-items:center;
+      background: rgba(0, 0, 0, 0.6);
+      padding: 10px;
+      border-radius: 8px;
+
+    }
+
+    nav a {
+      color: white;
+      margin: 0 8px;
+      text-decoration: none;
+      font-weight: bold;
+    }
+  </style>
+</head>
+<body>
+
+  <!-- Navigation Links -->
+  <nav>
+    <a href="#page1">home</a>
+    <a href="#page2">service</a>
+    <a href="#page3">about</a>
+    <a href="#page4">contact</a>
+  </nav>
+
+  <!-- Pages -->
+  <div id="page1" class="page">home<br>
+   <p class="sticky">STICKY CONTENT</p>
+  </div>
+  <div id="page2" class="page">services
+    <br><p class="relative">relative CONTENT</p><br>
+  </div>
+  <div id="page3" class="flex-container">about</div>
+  <div id="page4" class="page">contact</div>
+
+</body>
+</html>

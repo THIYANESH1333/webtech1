@@ -1,0 +1,34 @@
+<!DOCTYPE html>
+<html>
+<head>
+  <title>Greet Example</title>
+</head>
+<body>
+
+  <h2>Greeting Page</h2>
+
+  <label>Enter your name:</label>
+  <input type="text" id="name" />
+
+  <button onclick="hi()">Greet Me</button>
+
+  <p id="greet"></p>
+
+  <script>
+    console.log(23 / 3);
+    function add(a, b) {
+      return a + b;
+    }
+    function greet(name, age) {
+      return `Hi ${name}, I am ${age} years old`;
+    }
+
+    console.log(greet('Virat', 36));
+    function hi() {
+      const name = document.getElementById('name').value;
+      document.getElementById('greet').innerText = `Hi ${name}`;
+    }
+  </script>
+
+</body>
+</html>
