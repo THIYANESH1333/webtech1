@@ -12,7 +12,7 @@ const Effects = () => {
 
   return (
     <div>
-      <h1>🧮 Count: {count}</h1>
+      <h1>Count: {count}</h1>
       <button onClick={() => setCount(count + 1)}>➕ Increment</button>
 
       <h2>👥 Users List</h2>
